@@ -1,0 +1,285 @@
+<!doctype html>
+<html>
+<head>
+<title>Jade Black Space</title>
+<meta charset="utf-8">
+<link rel="shortcut icon" href="logo1.ico">
+
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<style>
+body{
+  margin:0;
+}
+ul{
+    font-family: 'Roboto', sans-serif;
+      font-size:18px;
+      color:black;
+      list-style:none;
+       text-align: center;
+   }
+   ul li{
+  display: inline;
+}
+a{
+ text-decoration: none;
+ color: white;
+}
+/* unvisited link */
+a:link {
+color: white;
+}
+/* mouse over link */
+a:hover {
+text-decoration: underline;
+}
+P{
+font-family: 'Roboto', sans-serif;
+  font-size:18px;
+  color:white;
+  text-align: justify;
+  line-height:1.3em
+}
+
+h1 {
+font-family:Futura;
+font-weight:bold;
+font-size:45px;
+color: #ffffff00;
+-webkit-text-stroke-width: 1.5px;
+-webkit-text-stroke-color: white;
+text-align: center;
+margin:0 auto;
+padding-bottom: 10px;
+padding-top: 10px;
+}
+
+
+#img1{
+  padding : 35px 50px 30px 100px;
+  opacity: 1;
+  width: 100%;
+  max-width: 569px;
+  height: auto;
+}
+#box1{
+  padding : 30px 100px 30px 100px;
+  opacity: 1;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+nav{
+  font-family: 'Roboto', sans-serif;
+font-size:15px;
+color:white;
+white-space: nowrap;
+}
+#updown{
+  margin:0 auto;
+  padding-top: 40px;
+}
+
+#logo1 {
+opacity: 1;
+position: absolute;
+width: 60px;
+height: 60px;
+top: 20px;
+left: 50%;
+margin-left: -30px;
+margin-right: auto;
+display:inline;
+}
+
+  #footer{
+  margin: 0;
+  height: 40px;
+  padding: 30px 0 30px 0;
+  font-family: 'Roboto', sans-serif;
+  font-size:15px;
+  color:white;
+  text-align: center;
+}
+
+
+.jbMenu {
+  background-color: #161619;
+  padding-bottom: 25px;
+  width: 100%;
+}
+
+.jbFixed {
+  position: fixed;
+  top: 0px;
+}
+#menu-work{
+  float: left;
+  margin: 0 0 0 100px;
+  padding: 0 0 0 0;
+}
+
+#menu-about{
+  float: right;
+  position: relative;
+  margin: 0 100px 0 0;
+  padding: 0;
+}
+
+@media(max-width:769px){
+  p{
+    font-size:18px;
+  }
+  #img1{
+    padding : 20px 25px 5px 50px;
+  }
+  #box1{
+    padding : 5px 50px 5px 50px;
+  }
+
+  @media(max-width:640px){
+    h1 {
+      font-size:30px;
+    }
+    p{
+      font-size:15px;
+    }
+    ul{
+        font-size: 14px
+       }
+       #img1{
+         padding : 10px 0 5px 0px;
+        width: 100%;
+       }
+       #box1{
+         padding : 5px 0 5px 20px;
+         width: 90%;
+       }
+    #logo1 {
+      width: 60px;
+      height: 60px;
+      top: 25px;
+      left: 50%;
+    margin-left: -30px;
+    }
+    #updown{
+      padding-top: 50px;
+  }
+
+  #footer{
+  padding: 30px 0 30px 0;
+  font-size:13px;
+
+  }
+  }
+  }
+
+</style>
+<script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
+   <script>
+     $( document ).ready( function() {
+       var jbOffset = $( '.jbMenu' ).offset();
+       $( window ).scroll( function() {
+         if ( $( document ).scrollTop() > jbOffset.top ) {
+           $( '.jbMenu' ).addClass( 'jbFixed' );
+         }
+         else {
+           $( '.jbMenu' ).removeClass( 'jbFixed' );
+         }
+       });
+     } );
+   </script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script type="text/javascript">var scrolltotop={setting:{startline:100,scrollto:0,scrollduration:1e3,fadeduration:[500,100]},controlHTML:'<img src="https://i1155.photobucket.com/albums/p559/scrolltotop/arrow79.png" />',controlattrs:{offsetx:5,offsety:5},anchorkeyword:"#top",state:{isvisible:!1,shouldvisible:!1},scrollup:function(){this.cssfixedsupport||this.$control.css({opacity:0});var t=isNaN(this.setting.scrollto)?this.setting.scrollto:parseInt(this.setting.scrollto);t="string"==typeof t&&1==jQuery("#"+t).length?jQuery("#"+t).offset().top:0,this.$body.animate({scrollTop:t},this.setting.scrollduration)},keepfixed:function(){var t=jQuery(window),o=t.scrollLeft()+t.width()-this.$control.width()-this.controlattrs.offsetx,s=t.scrollTop()+t.height()-this.$control.height()-this.controlattrs.offsety;this.$control.css({left:o+"px",top:s+"px"})},togglecontrol:function(){var t=jQuery(window).scrollTop();this.cssfixedsupport||this.keepfixed(),this.state.shouldvisible=t>=this.setting.startline?!0:!1,this.state.shouldvisible&&!this.state.isvisible?(this.$control.stop().animate({opacity:1},this.setting.fadeduration[0]),this.state.isvisible=!0):0==this.state.shouldvisible&&this.state.isvisible&&(this.$control.stop().animate({opacity:0},this.setting.fadeduration[1]),this.state.isvisible=!1)},init:function(){jQuery(document).ready(function(t){var o=scrolltotop,s=document.all;o.cssfixedsupport=!s||s&&"CSS1Compat"==document.compatMode&&window.XMLHttpRequest,o.$body=t(window.opera?"CSS1Compat"==document.compatMode?"html":"body":"html,body"),o.$control=t('<div id="topcontrol">'+o.controlHTML+"</div>").css({position:o.cssfixedsupport?"fixed":"absolute",bottom:o.controlattrs.offsety,right:o.controlattrs.offsetx,opacity:0,cursor:"pointer"}).attr({title:"Scroll to Top"}).click(function(){return o.scrollup(),!1}).appendTo("body"),document.all&&!window.XMLHttpRequest&&""!=o.$control.text()&&o.$control.css({width:o.$control.width()}),o.togglecontrol(),t('a[href="'+o.anchorkeyword+'"]').click(function(){return o.scrollup(),!1}),t(window).bind("scroll resize",function(t){o.togglecontrol()})})}};scrolltotop.init();</script>
+
+ </head>
+
+<body bgcolor= #161619 oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+
+출처: http://js2prince.tistory.com/entry/오른쪽-마우스-금지-소스-드래그-금지-소스 [개발은 전투다]>
+
+
+ <div class="jbMenu">
+<nav id="updown">
+  <div id="logo1">
+      <a href="infointro.html"><image src="logowhite.png" x="0" y="0" width="100%"/></a>
+  </div>
+    <div id="menu-work"> <a href="work.html" class="work">WORK</a> </div>
+    <div id="menu-about"> <a href="about.html" class="about">ABOUT</a> </div>
+  </nav>
+</div>
+<br>
+
+  <h1>IDENTITY</h1>
+
+  <image id="img1"src="profileBW.jpg"/ style="display:inline-block; align: center;vertical-align: middle;">
+    <div id="box1" style="display:inline-block;vertical-align: middle;">
+        <h1>&nbsp;&nbsp;JADE BLACK</h1>
+        <P>
+          Jade Black is an artist based in New York. He created a series of
+          works to express his belief that three universes are all connected;
+          Macrocosm, Microcosm, and the Human world. Because of this
+          belief, Jade blends various features from each of them under the
+          theme of connection.Jade Black is an artist based in New York. He
+          created a series of  works to express his belief that three universes
+          all connected; Macrocosm, Microcosm, and the Human world.
+          <br>
+        </P>
+          <ul>
+            <li><a href="contact.html">Contact</a></li>&nbsp;&nbsp;&nbsp;
+      <!--      <li><a href=".html">Exhibition</a></li>&nbsp;&nbsp;&nbsp;
+            <li><a href=".html">Project</a></li>  콜라보레이션 및 다양한 활동, 프로젝트 -->
+          </ul>
+
+      </div>
+
+  <image id="img1"src="JBprofileBW.jpg"/ style="display:inline-block; align: center;vertical-align: middle;">
+      <div id="box1" style="display:inline-block;vertical-align: middle;">
+          <h1>&nbsp;&nbsp;POP ART</h1>
+          <P>
+
+            Jade Black’s pop artworks are based on specific belief and energy. Since Jade was a child, he likes reading science books and going to museums. He felt special when he founds specific things that lead his heart strongly.
+            <br><br>
+            The first parts of them are artworks from human’s endeavor to understand the universe through God and religion. The examples are artworks from African and American civilization, Cubism and Renaissance arts. The another is accidental and beautiful form of experimental equipments and spaceships from scientists. The others are the world of sophisticated cells which compose a life, and the quantum world in which different orders exist.
+            <br><br>
+          Jade claims that micro world, human society and universe are connected. Based on this belief, Jade has been working for 10 years and the series of Inside & Outside and Microcosm & Macrocosm compose his Pop Artworks.
+
+            Jade Black disassembles and combines inspirations from multiple universes. He finally aims to recreate them as a ‘Brand’, the new civilization of contemporary society.
+
+          </P>
+
+            <!-- <li><a href="https://www.brunch.co.kr/@jadeblack" target="_blank">(KOR) Brunch</a></li><br> -->
+
+        </div>
+
+        <image id="img1"src="infofamilyBW.jpg"/ style="display:inline-block; align: center;vertical-align: middle;">
+            <div id="box1" style="display:inline-block;vertical-align: middle;">
+                <h1>&nbsp;&nbsp;CONCEPTUAL ART</h1>
+                <P>
+                  Jade Black’s conceptual art reflects contemporary society. To the current generation living in the 21st century, the biggest confusion is mainly based on ‘blurred boundaries'.
+
+                  Nowadays, blurred lines between human and A.I, nature and artifice, nations, ethnic groups, and genders cause an identity crisis.
+                  <br><br>
+                  Boundaries and binaries are based on ‘definition’ and ‘classification’. By using these devices, humans could easily communicate each other and construct society by dividing right and left. However, clear boundaries that divide everything exists only in human’s imagination.
+
+                  That Boundaries are just like Schrödinger's cat. They are simultaneously both alive and dead without absolute positions.
+                  <br><br>
+                  In Jade’s art world, he switches the hierarchy of two conflicting objects with blurred boundary. The message from this new situation with a discomfort Déjà Vu is simple. “Nothing is forever, be yourself.”
+                </P>
+
+              </div>
+
+      <div id="class">
+        <footer>
+          <p class id="footer">
+
+            <a href="https://www.instagram.com/jadeblack88/" target="_blank">Instagram </a> &nbsp;&nbsp;&nbsp;
+            <a href="mailto:jadeblack52@email.coml">Email </a> <br><br>
+
+             Copyright © 2019 Jade Black, All rights reserved.<br><br>
+            </p>
+      </footer>
+      </div>
+
+        </body>
+        </html>

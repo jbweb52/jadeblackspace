@@ -1,0 +1,267 @@
+<!doctype html>
+<html>
+<head>
+<title>Jade Black Space</title>
+<meta charset="utf-8">
+<link rel="shortcut icon" href="logo1.ico">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<style>
+
+body{
+  margin:0;
+}
+ul{
+    font-family: 'Roboto', sans-serif;
+      font-size:18px;
+      color:black;
+      list-style:none;
+       text-align: center;
+   }
+a{
+ text-decoration: none;
+ color: black;
+}
+/* unvisited link */
+a:link {
+color: black;
+}
+/* mouse over link */
+a:hover {
+text-decoration: underline;
+}
+
+
+h1 {
+font-family:Futura;
+font-weight:bold;
+font-size:45px;
+color: #ffffff00;
+-webkit-text-stroke-width: 1.5px;
+-webkit-text-stroke-color: black;
+text-align: center;
+margin:0 auto;
+padding-bottom: 10px;
+padding-top: 10px;
+}
+
+#img1{
+  padding : 35px 50px 30px 100px;
+  opacity: 1;
+  width: 100%;
+  max-width: 569px;
+  height: auto;
+}
+#box1{
+  padding : 30px 100px 30px 100px;
+  opacity: 1;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+nav{
+font-family: 'Roboto', sans-serif;
+font-size:15px;
+color:black;
+white-space: nowrap;
+}
+#updown{
+  margin:0 auto;
+  padding-top: 40px;
+}
+
+#logo1 {
+opacity: 1;
+position: absolute;
+width: 60px;
+height: 60px;
+top: 20px;
+left: 50%;
+margin-left: -30px;
+margin-right: auto;
+display:inline;
+}
+
+  #footer{
+  margin: 0;
+  height: 40px;
+  padding: 30px 0 30px 0;
+font-family: 'Roboto', sans-serif;
+  font-size:15px;
+  color:black;
+  text-align: center;
+}
+
+
+.jbMenu {
+  background-color: white;
+  padding-bottom: 25px;
+  width: 100%;
+}
+
+.jbFixed {
+  position: fixed;
+  top: 0px;
+}
+#menu-work{
+  float: left;
+  margin: 0 0 0 100px;
+  padding: 0 0 0 0;
+}
+
+#menu-about{
+  float: right;
+  position: relative;
+  margin: 0 100px 0 0;
+  padding: 0;
+}
+
+@media(max-width:769px){
+  p{
+    font-size:18px;
+    text-align: center;
+    text-align: left;
+  }
+  #img1{
+    padding : 10px 0 5px 0px;
+  }
+  #box1{
+    padding : 5px 0 5px 0;
+
+  }
+
+  @media(max-width:640px){
+    h1 {
+      font-size:30px;
+    }
+    p{
+      font-size:15px;
+    }
+    ul{
+        font-size: 14px
+       }
+    #logo1 {
+      width: 60px;
+      height: 60px;
+      top: 25px;
+      left: 50%;
+    margin-left: -30px;
+    }
+    #updown{
+      padding-top: 50px;
+  }
+
+  #footer{
+  padding: 30px 0 30px 0;
+  font-size:13px;
+
+  }
+  }
+  }
+
+</style>
+<script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
+   <script>
+     $( document ).ready( function() {
+       var jbOffset = $( '.jbMenu' ).offset();
+       $( window ).scroll( function() {
+         if ( $( document ).scrollTop() > jbOffset.top ) {
+           $( '.jbMenu' ).addClass( 'jbFixed' );
+         }
+         else {
+           $( '.jbMenu' ).removeClass( 'jbFixed' );
+         }
+       });
+     } );
+   </script>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script type="text/javascript">var scrolltotop={setting:{startline:100,scrollto:0,scrollduration:1e3,fadeduration:[500,100]},controlHTML:'<img src="https://i1155.photobucket.com/albums/p559/scrolltotop/arrow79.png" />',controlattrs:{offsetx:5,offsety:5},anchorkeyword:"#top",state:{isvisible:!1,shouldvisible:!1},scrollup:function(){this.cssfixedsupport||this.$control.css({opacity:0});var t=isNaN(this.setting.scrollto)?this.setting.scrollto:parseInt(this.setting.scrollto);t="string"==typeof t&&1==jQuery("#"+t).length?jQuery("#"+t).offset().top:0,this.$body.animate({scrollTop:t},this.setting.scrollduration)},keepfixed:function(){var t=jQuery(window),o=t.scrollLeft()+t.width()-this.$control.width()-this.controlattrs.offsetx,s=t.scrollTop()+t.height()-this.$control.height()-this.controlattrs.offsety;this.$control.css({left:o+"px",top:s+"px"})},togglecontrol:function(){var t=jQuery(window).scrollTop();this.cssfixedsupport||this.keepfixed(),this.state.shouldvisible=t>=this.setting.startline?!0:!1,this.state.shouldvisible&&!this.state.isvisible?(this.$control.stop().animate({opacity:1},this.setting.fadeduration[0]),this.state.isvisible=!0):0==this.state.shouldvisible&&this.state.isvisible&&(this.$control.stop().animate({opacity:0},this.setting.fadeduration[1]),this.state.isvisible=!1)},init:function(){jQuery(document).ready(function(t){var o=scrolltotop,s=document.all;o.cssfixedsupport=!s||s&&"CSS1Compat"==document.compatMode&&window.XMLHttpRequest,o.$body=t(window.opera?"CSS1Compat"==document.compatMode?"html":"body":"html,body"),o.$control=t('<div id="topcontrol">'+o.controlHTML+"</div>").css({position:o.cssfixedsupport?"fixed":"absolute",bottom:o.controlattrs.offsety,right:o.controlattrs.offsetx,opacity:0,cursor:"pointer"}).attr({title:"Scroll to Top"}).click(function(){return o.scrollup(),!1}).appendTo("body"),document.all&&!window.XMLHttpRequest&&""!=o.$control.text()&&o.$control.css({width:o.$control.width()}),o.togglecontrol(),t('a[href="'+o.anchorkeyword+'"]').click(function(){return o.scrollup(),!1}),t(window).bind("scroll resize",function(t){o.togglecontrol()})})}};scrolltotop.init();</script>
+
+
+ </head>
+
+<body bgcolor= white>
+
+
+ <div class="jbMenu">
+<nav id="updown">
+  <div id="logo1">
+      <a href="infointro.html"><image src="logo1.png" x="0" y="0" width="100%"/></a>
+  </div>
+    <div id="menu-work"> <a href="work.html" class="work">WORK</a> </div>
+    <div id="menu-about"> <a href="about.html" class="about">ABOUT</a> </div>
+  </nav>
+</div>
+<br>
+
+  <h1>BOUNDARY</h1>
+
+  <a id="onoff"><image id="img1"src="info1sq.jpg" style="display:inline-block; align:left;vertical-align: middle;" /></a>
+<div id="box1" style="display:inline-block;vertical-align: middle;">
+  <h1>&nbsp;&nbsp;ONLINE & OFFLINE</h1>
+   <ul>
+    <li><a href="17ss.html">17SS Seoul Fashion Week</a></li><br>
+     <li><a href="18fw.html">18FW Seoul Fashion Week</a></li><br>
+     <li><a href="infolookbook.html">2018/19 Information Overload Lookbook</a></li><br>
+  <!--   <li><a href="#">19FW New York Fashion Week</a></li><br>-->
+  <!--   <li><a href="#">Time Square Performance</a></li> <-->
+   </ul>
+</div>
+
+<!--
+   <image id="img1"src="humancamo1.png"/ style="display:inline-block; align: center;vertical-align: middle;">
+     <div id="box1" style="display:inline-block;vertical-align: middle;">
+       <h1>INDIVIDUAL & GROUP</h1>
+       <ul>
+         <li><a href="#">Hand - Made</a></li><br>
+         <li><a href="#">Eyephography</a></li><br>
+         <li><a href="#">Human Camoufalge</a></li>
+       </ul>
+      </div>
+-->
+
+  <a id="obj"><image id="img1"src="hand4sq.jpg"/ style="display:inline-block; align: center;vertical-align: middle;"></a>
+    <div id="box1" style="display:inline-block;vertical-align: middle;">
+    <h1>&nbsp;&nbsp;SUBJECT & OBJECT</h1>
+    <ul>
+      <li><a href="hand.html">Hands - Made</a></li><br>
+      <li><a href="eye.html">Eyephography</a></li><br>
+      <li><a href="waterbottle.html">Waterbottle Family</a></li><br>
+      <li><a href="humancamo.html">Human Camoufalge</a></li><br>
+      <li><a href="geppetto.html">Journey of Finding Geppetto</a></li>
+    </ul>
+          </div>
+
+
+  <a id="mcr"><image id="img1"src="room5sq.jpg"/ style="display:inline-block; align: center;vertical-align: middle;"></a>
+    <div id="box1" style="display:inline-block;vertical-align: middle;">
+      <h1>&nbsp;&nbsp;MICROCOSM & MARCROCOSM</h1>
+      <ul>
+        <li><a href="randomworks.html">Random Works</a></li><br>
+        <li><a href="space.html">Jade Black Space Project</a></li><br>
+        <li><a href="sif.html">2018 Seoul Illustration Fair </a></li>
+      </ul>
+            </div>
+
+    <a id="inout"><image id="img1"src="JB1.jpg"/ style="display:inline-block; align: center;vertical-align: middle;"></a>
+    <div id="box1" style="display:inline-block;vertical-align: middle;">
+        <h1>&nbsp;&nbsp;INSIDE & OUTSIDE</h1>
+        <ul>
+          <li><a href="cell.html">Cell Series</a></li><br>
+      <!--  <li><a href="frame.html">Frame Series</a></li> -->
+        </ul>
+      </div>
+
+      <div id="class">
+        <footer>
+          <p class id="footer">
+            <a href="https://www.instagram.com/jadeblack88/" target="_blank">Instagram </a> &nbsp;&nbsp;&nbsp;
+            <a href="mailto:jadeblack52@email.coml">Email </a> <br> <br>
+             Copyright © 2019 Jade Black, All rights reserved.
+            </p>
+      </footer>
+      </div>
+
+        </body>
+        </html>

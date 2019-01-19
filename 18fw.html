@@ -1,0 +1,283 @@
+<!doctype html>
+<html>
+<head>
+<title>Jade Black Space</title>
+<meta charset="utf-8">
+<link rel="shortcut icon" href="logo1.ico">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+<style>
+
+
+body{
+  margin:0;
+}
+ul{
+   list-style:none;
+    text-align: center;
+    font-size: 18px
+   }
+a{
+ text-decoration: none;
+ color: black;
+}
+/* unvisited link */
+a:link {
+color: black;
+}
+/* mouse over link */
+a:hover {
+
+}
+P{
+font-family: 'Roboto', sans-serif;
+  font-size:20px;
+  color:black;
+text-align: justify; text-align-last: center;
+
+}
+
+
+h1 {
+font-family:Futura;
+font-weight:bold;
+font-size:45px;
+color: #ffffff00;
+-webkit-text-stroke-width: 1.5px;
+-webkit-text-stroke-color: black;
+text-align: center;
+margin:0 auto;
+padding-bottom: 10px;
+padding-top: 10px;
+}
+
+#img1{
+    padding: 0 0 0 0px;
+    display: absolute;
+  display: inline !important;
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 90%;
+  margin: auto;
+}
+#img2{
+  padding : 10px 0px 10px 20px;
+  opacity: 1;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+}
+
+#box1{
+  padding : 30px 100px 30px 100px;
+  opacity: 1;
+  display: block;
+ margin-left: auto;
+ margin-right: auto;
+    max-width: 750px;
+}
+#video{
+  display:block;
+ margin: 0 auto;
+ padding-top: 30px;
+}
+
+nav{
+font-family: 'Roboto', sans-serif;
+font-size:15px;
+color:black;
+white-space: nowrap;
+}
+#updown{
+  margin:0 auto;
+  padding-top: 40px;
+}
+
+#logo1 {
+opacity: 1;
+position: absolute;
+width: 60px;
+height: 60px;
+top: 20px;
+left: 50%;
+margin-left: -30px;
+margin-right: auto;
+display:inline;
+}
+
+  #footer{
+  margin: 0;
+  height: 40px;
+  padding: 30px 0 30px 0;
+    font-family: 'Roboto', sans-serif;
+  font-size:15px;
+  color:black;
+  text-align: center;
+}
+
+
+.jbMenu {
+  background-color: white;
+  padding-bottom: 25px;
+  width: 100%;
+}
+
+.jbFixed {
+  position: fixed;
+  top: 0px;
+}
+#menu-work{
+  float: left;
+  margin: 0 0 0 100px;
+  padding: 0 0 0 0;
+}
+
+#menu-about{
+  float: right;
+  position: relative;
+  margin: 0 100px 0 0;
+  padding: 0;
+}
+
+@media(max-width:769px){
+  p{
+    font-size:18px;
+    text-align: center;
+    text-align: left;
+  }
+  #img1{
+    padding : 0 0 0 0px;
+    display: inline !important;
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 90%;
+    margin: auto;
+  }
+  #img2{
+    padding : 10px 0 0 0px;
+    display: inline !important;
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 90%;
+    margin: auto;
+  }
+
+  #box1{
+    padding : 5px 0 5px 0;
+  }
+  #video{
+   width : 380px
+  }
+
+  @media(max-width:640px){
+    h1 {
+      font-size:30px;
+    }
+    p{
+      font-size:15px;
+    }
+    ul{
+        font-size: 14px
+       }
+       #box1{
+         padding : 5px 0 5px 20px;
+         width: 90%;
+       }
+    #logo1 {
+      width: 60px;
+      height: 60px;
+      top: 25px;
+      left: 50%;
+    margin-left: -30px;
+    }
+    #updown{
+      padding-top: 50px;
+  }
+
+  #footer{
+  padding: 30px 0 30px 0;
+  font-size:13px;
+
+  }
+  }
+  }
+
+</style>
+<script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
+   <script>
+     $( document ).ready( function() {
+       var jbOffset = $( '.jbMenu' ).offset();
+       $( window ).scroll( function() {
+         if ( $( document ).scrollTop() > jbOffset.top ) {
+           $( '.jbMenu' ).addClass( 'jbFixed' );
+         }
+         else {
+           $( '.jbMenu' ).removeClass( 'jbFixed' );
+         }
+       });
+     } );
+   </script>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script type="text/javascript">var scrolltotop={setting:{startline:100,scrollto:0,scrollduration:1e3,fadeduration:[500,100]},controlHTML:'<img src="https://i1155.photobucket.com/albums/p559/scrolltotop/arrow79.png" />',controlattrs:{offsetx:5,offsety:5},anchorkeyword:"#top",state:{isvisible:!1,shouldvisible:!1},scrollup:function(){this.cssfixedsupport||this.$control.css({opacity:0});var t=isNaN(this.setting.scrollto)?this.setting.scrollto:parseInt(this.setting.scrollto);t="string"==typeof t&&1==jQuery("#"+t).length?jQuery("#"+t).offset().top:0,this.$body.animate({scrollTop:t},this.setting.scrollduration)},keepfixed:function(){var t=jQuery(window),o=t.scrollLeft()+t.width()-this.$control.width()-this.controlattrs.offsetx,s=t.scrollTop()+t.height()-this.$control.height()-this.controlattrs.offsety;this.$control.css({left:o+"px",top:s+"px"})},togglecontrol:function(){var t=jQuery(window).scrollTop();this.cssfixedsupport||this.keepfixed(),this.state.shouldvisible=t>=this.setting.startline?!0:!1,this.state.shouldvisible&&!this.state.isvisible?(this.$control.stop().animate({opacity:1},this.setting.fadeduration[0]),this.state.isvisible=!0):0==this.state.shouldvisible&&this.state.isvisible&&(this.$control.stop().animate({opacity:0},this.setting.fadeduration[1]),this.state.isvisible=!1)},init:function(){jQuery(document).ready(function(t){var o=scrolltotop,s=document.all;o.cssfixedsupport=!s||s&&"CSS1Compat"==document.compatMode&&window.XMLHttpRequest,o.$body=t(window.opera?"CSS1Compat"==document.compatMode?"html":"body":"html,body"),o.$control=t('<div id="topcontrol">'+o.controlHTML+"</div>").css({position:o.cssfixedsupport?"fixed":"absolute",bottom:o.controlattrs.offsety,right:o.controlattrs.offsetx,opacity:0,cursor:"pointer"}).attr({title:"Scroll to Top"}).click(function(){return o.scrollup(),!1}).appendTo("body"),document.all&&!window.XMLHttpRequest&&""!=o.$control.text()&&o.$control.css({width:o.$control.width()}),o.togglecontrol(),t('a[href="'+o.anchorkeyword+'"]').click(function(){return o.scrollup(),!1}),t(window).bind("scroll resize",function(t){o.togglecontrol()})})}};scrolltotop.init();</script>
+
+ </head>
+
+<body bgcolor= white>
+
+
+ <div class="jbMenu">
+<nav id="updown">
+  <div id="logo1">
+      <a href="infointro.html"><image src="logo1.png" x="0" y="0" width="100%"/></a>
+  </div>
+    <div id="menu-work"> <a href="work.html" class="work">WORK</a> </div>
+    <div id="menu-about"> <a href="about.html" class="about">ABOUT</a> </div>
+  </nav>
+</div>
+<br>
+
+  <a href="work.html#onoff"><h1>ONLINE & OFFLINE</h1></a>
+  <image id="img1"src="18sfw0.jpg" style="display:inline-block; align:left;vertical-align: middle;">
+  <image id="img2"src="18sfw1.jpg" style="display:inline-block; align:left;vertical-align: middle;">
+  <image id="img2"src="18sfw2.jpg" style="display:inline-block; align:left;vertical-align: middle;">
+
+
+
+    <iframe id="video" src="https://player.vimeo.com/video/271646515" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+<br>
+    <div id="box1">
+    <h1>18FW SEOUL FASHION WEEK</h1>
+  <p>
+    Performance, 2018
+    <br><br>
+    At the 18FW Seoul Fashion Week, Three models wore garments on the theme of "identity". I wanted to show the possibility that fashion can represent an individual's identity and reflect the society, not only expressing an external beauty.
+
+  </p>
+  </div>
+     <a id="button" style=”display: inline;”></a>
+
+
+
+  </a>
+
+      <div id="class">
+        <footer>
+          <p class id="footer">
+            <a href="https://www.instagram.com/jadeblack88/" target="_blank">Instagram </a> &nbsp;&nbsp;&nbsp;
+            <a href="mailto:jadeblack52@email.coml">Email </a> <br> <br>
+             Copyright © 2019 Jade Black, All rights reserved.
+            </p>
+      </footer>
+      </div>
+
+        </body>
+        </html>
