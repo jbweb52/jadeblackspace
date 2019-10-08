@@ -4,8 +4,173 @@
 <title>Jade Black Space</title>
 <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
 <link rel="shortcut icon" href="logo1.ico">
+
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-<link rel="stylesheet"  href="jbstyle.css">
+<style>
+body{
+  margin:0;
+}
+
+a{
+ text-decoration: none;
+ color: white;
+}
+/* unvisited link */
+a:link {
+color: white;
+}
+/* mouse over link */
+a:hover {
+text-decoration: underline;
+}
+P{
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+    font-size:22px;
+    color:white;
+}
+
+h1 {
+font-family:Futura;
+font-weight:bold;
+font-size:45px;
+color: #ffffff00;
+-webkit-text-stroke-width: 1.5px;
+-webkit-text-stroke-color: white;
+text-align: center;
+margin:0 auto;
+padding-bottom: 10px;
+padding-top: 10px;
+}
+#info{
+border: 2px solid white;
+background: #ffffff00;
+background-clip: padding-box;
+margin: 0 20% 0 20%;
+padding-top: 50px
+padding-bottom: 50px
+}
+#img1{
+  padding : 35px 50px 30px 100px;
+  opacity: 1;
+  width: 100%;
+  max-width: 569px;
+  height: auto;
+}
+#box1{
+  padding : 30px 100px 30px 100px;
+  opacity: 1;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+nav{
+font-family: 'Roboto', sans-serif;
+font-size:15px;
+color:white;
+white-space: nowrap;
+}
+#updown{
+  margin:0 auto;
+  padding-top: 40px;
+}
+
+#logo1 {
+opacity: 1;
+position: absolute;
+width: 60px;
+height: 60px;
+top: 20px;
+left: 50%;
+margin-left: -30px;
+margin-right: auto;
+display:inline;
+}
+
+  #footer{
+  margin: 0;
+  height: 40px;
+  padding: 30px 0 70px 0;
+  font-family: 'Roboto', sans-serif;
+  font-size:15px;
+  color:white;
+  text-align: center;
+}
+
+
+.jbMenu {
+  background-color: #161619;
+  padding-bottom: 25px;
+  width: 100%;
+}
+
+.jbFixed {
+  position: fixed;
+  top: 0px;
+}
+#menu-work{
+  float: left;
+  margin: 0 0 0 100px;
+  padding: 0 0 0 0;
+}
+
+#menu-about{
+  float: right;
+  position: relative;
+  margin: 0 100px 0 0;
+  padding: 0;
+}
+
+@media(max-width:769px){
+  p{
+    font-size:18px;
+  }
+  #img1{
+    padding : 20px 25px 5px 50px;
+  }
+  #box1{
+    padding : 5px 50px 5px 50px;
+  }
+
+  @media(max-width:640px){
+    h1 {
+      font-size:30px;
+    }
+    p{
+      font-size:15px;
+    }
+    ul{
+        font-size: 14px
+       }
+       #img1{
+         padding : 10px 0 5px 0px;
+        width: 100%;
+       }
+       #box1{
+         padding : 5px 0 5px 20px;
+         width: 90%;
+       }
+    #logo1 {
+      width: 60px;
+      height: 60px;
+      top: 25px;
+      left: 50%;
+    margin-left: -30px;
+    }
+    #updown{
+      padding-top: 50px;
+  }
+
+  #footer{
+  padding: 30px 0 30px 0;
+  font-size:13px;
+
+  }
+  }
+  }
+
+</style>
 <script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
    <script>
      $( document ).ready( function() {
@@ -46,7 +211,8 @@
 
  </head>
 
-<body bgcolor= white oncontextmenu="return false">
+<body bgcolor= #161619 oncontextmenu="return false">
+
 
   <div class="jbMenu">
    <nav id="updown">
@@ -66,44 +232,27 @@
            </nav>
              </div>
 
-<a href="work.html#onoff"><h1>ONLINE & OFFLINE</h1></a>
- <image id="img1"src="onoffnyc1.jpg" on>
- <image id="img2"src="onoffnyc2.jpg" style="display:inline-block; align:left;vertical-align: middle;">
- <image id="img2"src="onoffnyc3.jpg" style="display:inline-block; align:left;vertical-align: middle;">
+  <h1>SORRY</h1>
 
- <image id="img2"src="onoffnyc5.jpg" style="display:inline-block; align:left;vertical-align: middle;">
- <image id="img2"src="onoffnyc6.jpg" style="display:inline-block; align:left;vertical-align: middle;">
- <image id="img2"src="onoffnyc7.jpg" style="display:inline-block; align:left;vertical-align: middle;">
- <image id="img2"src="onoffnyc8.jpg" style="display:inline-block; align:left;vertical-align: middle;">
-
-<br>
-    <div id="box1">
-      <h1>ONOFF PROJECT<br>X <br>NEW YORK DESIGN WEEK</h1>
-    <p>
-      Washington Square Park, NYC   <br><br>
-      12:00-16:00 PM, May 11th, 2019   <br><br>
-  The ON-OFF performance is completed through the movements of people online.
-   The performance is divided into six categories of the internet- anonymity,
-   expandability, voyeurism, upload, download and data.
-   <br><br>
-  In pursuit of a coexisting value within the online and offline world,
-  the project was chosen to be held in Washington Square Park, a place that
-  holds both the city and nature inside New York City. Eight performers are planned
-   to display the unstable position of the modern person between the offline and online
-    world for approximately three hours.
-    <br><br>
-  * The 2019 ON-OFF performance is curated by the KANA, Korean Association of New York Artists and NYC Design Week.
-
-    </p>
-  </div>
-
+  <div id="info">
+<p>
+  페이지 준비중입니다<br>Coming Soon
+</p>
+<p>
+  <a href="https://www.instagram.com/jadeblack88/" target="_blank">@jadeblack88</a>
+  <br>
+  <a href="mailto:jadeblack52@email.coml">jadeblack52@gmail.com</a>
+</p>
+</div>
 
       <div id="class">
         <footer>
           <p class id="footer">
+
             <a href="https://www.instagram.com/jadeblack88/" target="_blank">Instagram </a> &nbsp;&nbsp;&nbsp;
-            <a href="mailto:jadeblack52@email.coml">Email </a> <br> <br>
-             Copyright © 2019 Jade Black, All rights reserved.
+            <a href="mailto:jadeblack52@email.coml">Email </a> <br><br>
+
+             Copyright © 2019 Jade Black, All rights reserved.<br><br>
             </p>
       </footer>
       </div>
