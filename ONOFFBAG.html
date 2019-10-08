@@ -21,6 +21,29 @@
        });
      } );
    </script>
+
+   <script>
+      /* When the user clicks on the button,
+   toggle between hiding and showing the dropdown content */
+   function myFunction() {
+     document.getElementById("myDropdown").classList.toggle("show");
+   }
+
+   // Close the dropdown menu if the user clicks outside of it
+   window.onclick = function(event) {
+     if (!event.target.matches('.dropbtn')) {
+       var dropdowns = document.getElementsByClassName("dropdown-content");
+       var i;
+       for (i = 0; i < dropdowns.length; i++) {
+         var openDropdown = dropdowns[i];
+         if (openDropdown.classList.contains('show')) {
+           openDropdown.classList.remove('show');
+         }
+       }
+     }
+   }
+   </script>
+   
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
    <script type="text/javascript">var scrolltotop={setting:{startline:100,scrollto:0,scrollduration:1e3,fadeduration:[500,100]},controlHTML:'<img src="https://i1155.photobucket.com/albums/p559/scrolltotop/arrow79.png" />',controlattrs:{offsetx:5,offsety:5},anchorkeyword:"#top",state:{isvisible:!1,shouldvisible:!1},scrollup:function(){this.cssfixedsupport||this.$control.css({opacity:0});var t=isNaN(this.setting.scrollto)?this.setting.scrollto:parseInt(this.setting.scrollto);t="string"==typeof t&&1==jQuery("#"+t).length?jQuery("#"+t).offset().top:0,this.$body.animate({scrollTop:t},this.setting.scrollduration)},keepfixed:function(){var t=jQuery(window),o=t.scrollLeft()+t.width()-this.$control.width()-this.controlattrs.offsetx,s=t.scrollTop()+t.height()-this.$control.height()-this.controlattrs.offsety;this.$control.css({left:o+"px",top:s+"px"})},togglecontrol:function(){var t=jQuery(window).scrollTop();this.cssfixedsupport||this.keepfixed(),this.state.shouldvisible=t>=this.setting.startline?!0:!1,this.state.shouldvisible&&!this.state.isvisible?(this.$control.stop().animate({opacity:1},this.setting.fadeduration[0]),this.state.isvisible=!0):0==this.state.shouldvisible&&this.state.isvisible&&(this.$control.stop().animate({opacity:0},this.setting.fadeduration[1]),this.state.isvisible=!1)},init:function(){jQuery(document).ready(function(t){var o=scrolltotop,s=document.all;o.cssfixedsupport=!s||s&&"CSS1Compat"==document.compatMode&&window.XMLHttpRequest,o.$body=t(window.opera?"CSS1Compat"==document.compatMode?"html":"body":"html,body"),o.$control=t('<div id="topcontrol">'+o.controlHTML+"</div>").css({position:o.cssfixedsupport?"fixed":"absolute",bottom:o.controlattrs.offsety,right:o.controlattrs.offsetx,opacity:0,cursor:"pointer"}).attr({title:"Scroll to Top"}).click(function(){return o.scrollup(),!1}).appendTo("body"),document.all&&!window.XMLHttpRequest&&""!=o.$control.text()&&o.$control.css({width:o.$control.width()}),o.togglecontrol(),t('a[href="'+o.anchorkeyword+'"]').click(function(){return o.scrollup(),!1}),t(window).bind("scroll resize",function(t){o.togglecontrol()})})}};scrolltotop.init();</script>
 
@@ -68,6 +91,19 @@
     Model : Jay Kim
    <br>
     Photo : The Alnico Picture
+    <br><br>
+    온라인과 오프라인을 넘나드는 제이드 블랙의 프로젝트, "ON-OFF"가 이번에는 가방으로 재탄생했습니다.
+    수많은 인터넷 창들로 이루어진 온오프 백은, 무한한 정보들 사이에 놓인 현대인들에게 영감을 받았습니다.
+    최근 샤넬, 꼼데가르송 및 여러 스트릿 웨어에서도 PVC 재질의 가방과 옷을 선보이고 있는데, 트렌디한 소재와 예술적 의미가 같이 담긴 ON-OFF 백을 일상 속에서 만나보는 것은 어떨까요?
+    <br><br>
+    크기 : 38 X 33 X 10 (cm) <br>
+    재질 : PVC <br>
+    방수 : 가능 <br>
+    <br><br>
+    <ul>
+      <li><a href="https://forms.gle/oyc1nbPyCK12YjDF9">Get ONOFF BAG</a>&nbsp;&nbsp;&nbsp;&nbsp;</li><br>
+      <li><a href="https://smartstore.naver.com/jadeblack/products/4638749997">온오프백 구매하기</a>&nbsp;&nbsp;&nbsp;&nbsp;</li><br>
+
 
   </p>
   </div>
